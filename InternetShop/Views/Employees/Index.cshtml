@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Employee>
+
+@{
+    ViewData["Title"] = "Сотрудники";
+}
+
+<div class="container">
+    <h1>Сотрудники</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Возраст</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@employee.Id"> @employee.Id</a>
+                    </td>
+                    <td>@employee.LastName</td>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.Paronymic</td>
+                    <td>@employee.Age</td>
+                    <td>
+                        <a asp-action="Details" asp-rout-id="@employee.Id"></a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+

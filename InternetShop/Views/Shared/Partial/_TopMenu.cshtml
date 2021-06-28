@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-7 col-md-9">
-                <div id="colorlib-logo"><a href="index.html">Footwear</a></div>
+                <div id="colorlib-logo"><a href="index.html">ОБУВЬ</a></div>
             </div>
             <div class="col-sm-5 col-md-3">
                 <form action="#" class="search-wrap">
@@ -18,20 +18,20 @@
                 <ul>
                     <li class="active"><a asp-controller="Home" asp-action="Index">Главная</a></li>
                     <li class="has-dropdown">
-                        <a href="men.html">Men</a>
+                        <a asp-controller="Home" asp-action="Men">Мужчины</a>
                         <ul class="dropdown">
-                            <li><a href="product-detail.html">Product Detail</a></li>
-                            <li><a href="cart.html">Shopping Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                            <li><a href="order-complete.html">Order Complete</a></li>
-                            <li><a href="add-to-wishlist.html">Wishlist</a></li>
+                            <li><a href="product-detail.html">Детали продуктаl</a></li>
+                            <li><a href="cart.html">Корзина</a></li>
+                            <li><a href="checkout.html">Оформление заказа</a></li>
+                            <li><a href="order-complete.html">Заказ завершен</a></li>
+                            <li><a href="add-to-wishlist.html">Список желаний</a></li>
                         </ul>
                     </li>
-                    <li><a href="women.html">Women</a></li>
+                    <li><a href="women.html">Женщины</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a asp-controller="Home" asp-action="Employees">Сотрудники</a></li>
-                    <li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a asp-controller="Employees" asp-action="Index">Сотрудники</a></li>
+                    <li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Корзина [0]</a></li>
                 </ul>
             </div>
         </div>
